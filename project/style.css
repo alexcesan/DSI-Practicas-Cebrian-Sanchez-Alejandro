@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* --------------------- */
+/* ELEMENTOS PRINCIPALES */
+/* --------------------- */
+body {
+    background-color: #FFAF9E ;
+    font-family: 'roboto', sans-serif;
+    padding: 45px 45px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #AB002A ;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+img {
+    border:5px solid black;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+hr { border: 1px solid black; }
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+    background-color: #DEDEDE ;
+    border:2px solid black;
+}
+
+a { 
+    color: #0049a0;
+    text-decoration:none;
+    font-weight:400;
+}
+
+footer {
+    text-align: center;
+    background-color: #DD5944;
+}
+
+/* ------------------- */
+/* BARRA DE NAVEGACIÓN */
+/* ------------------- */
+.navegacion {
+    list-style-type: none;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    background-color: #333;
+}
+
+np { float: left; }
+  
+np a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+np a:hover {
+    color: white;
+    background-color: rgb(94, 94, 94);
+}
+
+home a {
+    display: block;
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+home a:hover {
+    color: black;
+    background-color: rgb(218, 218, 218);
+}
+
+.active {
+    background-color: #A82020;
+    color: white;
+}
+
+.active:hover {
+    background-color: #C56666;
+    color: white;
+}
+
+/* ---------- */
+/* FORMULARIO */
+/* ---------- */
+.formulario {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: #DEDEDE;
+}
+
+.formulario h2, .formulario p, .formulario form {
+    margin: 0.5em;
+}
+
+/* ------------------- */
+/* TABLA DE CONTENIDOS */
+/* ------------------- */
+
+    /* FLEX */
+.flexbox-container { display: flex; }
+
+.contenido { margin: 2em; }
+
+.navegacion-contenido { min-width: 300px; }
+
+    /* FIXED */
+.navegacion-contenido ul { position: fixed; }
+
+/* ---------------------- */
+/* SECCIÓN DE COMENTARIOS */
+/* ---------------------- */
+.comentarios {
+    padding: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: #DD5944;
+}
+
+input[type=text] {
+    width: 150px;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 66%;
+  }
+
+/* --------------------- */
+/* BOTÓN - VOLVER ARRIBA */
+/* --------------------- */
+
+    /* FIXED */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 20px;
+    font-size: 18px;
+    color: black;
+    background-color: #DEDEDE;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 10px #999;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.hidden { opacity: 0; }
+
+.back-to-top:hover{
+    color: black;
+    background-color: #C70039;
+    border: 2px solid black;
+    box-shadow: 0 6px #999;
+    transform: translateY(4px);
+}
+
+/* ----------------- */
+/* BARRA DE PROGRESO */
+/* ----------------- */
+    
+    /* FIXED */
+.progress-bar {
+    height: 0.3rem;
+    background: #C70039;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
